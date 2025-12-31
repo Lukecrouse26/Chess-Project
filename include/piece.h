@@ -1,21 +1,22 @@
 #pragma once
 #include <string>
-#include "Color.h"
 #include "Position.h"
 
 class Piece {
-public:
-    Color color;
-    std::string name;
+protected:
+    char color;
     Position pos;
+    std::string name;
+
+public:
 
     //funcitons here
-    Piece(Color color_, const std::string& name_, Position pos_);
+    Piece(char color_, const std::string& name_, Position pos_);
 
     virtual bool isValidMove(const Position& newPos) const = 0;
 
     Position getPosition() const { return pos; }
-    Color getColor() const { return color; }
+    char getColor() const { return color; }
     std::string getName() const { return name; }
 
 

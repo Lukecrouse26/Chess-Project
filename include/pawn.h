@@ -9,7 +9,7 @@ public:
     int canTake;
     int canPromote;
 
-    Pawn(
+    Pawn()
 
 
 }
