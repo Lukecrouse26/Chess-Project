@@ -1,6 +1,6 @@
 #pragma once
-#include <string>
 #include "Position.h"
+#include <string>
 
 class Piece {
 protected:
@@ -10,14 +10,14 @@ protected:
 
 public:
 
-    //funcitons here
+    //functions here
     Piece(char color_, const std::string& name_, Position pos_);
 
-    virtual bool isValidMove(const Position& newPos) const = 0;
+    [[nodiscard]] virtual bool isValidMove(const Position& newPos) const;
 
-    Position getPosition() const { return pos; }
-    char getColor() const { return color; }
-    std::string getName() const { return name; }
+    Position getPosition() const;
+    char getColor() const;
+    std::string getName() const;
 
 
 

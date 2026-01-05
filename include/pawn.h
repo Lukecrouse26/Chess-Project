@@ -1,6 +1,5 @@
 #pragma once
 #include "piece.h"
-#include <vector>
 
 class Pawn : public Piece {
 private:
@@ -28,4 +27,4 @@ public:
     int getCanPromoteVal() const;
 
     bool isValidMove(const Position& newPos) const override;
-}
+};
