@@ -7,6 +7,7 @@ protected:
     char color;
     Position pos;
     std::string name;
+    int isPinned;
 
 public:
 
@@ -18,6 +19,7 @@ public:
     Position getPosition() const;
     char getColor() const;
     std::string getName() const;
+    int getIsPinned() const;
 
 
 

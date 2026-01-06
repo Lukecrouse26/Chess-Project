@@ -3,7 +3,7 @@
 using namespace std;
 
 Piece::Piece(char color_, const string& name_, Position pos_) :
-    color(color_), name(name_), pos(pos_) {}
+    color(color_), name(name_), pos(pos_), isPinned(0) {}
 
 //this needs to be done later once movetables are finished
 [[nodiscard]] bool Piece::isValidMove(const Position& newPos) const {
@@ -21,4 +21,8 @@ char Piece::getColor() const {
 
 std::string Piece::getName() const {
     return name;
+}
+
+int Piece::getIsPinned() const {
+    return isPinned;
 }
