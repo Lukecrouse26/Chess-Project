@@ -10,7 +10,7 @@ private:
 
 public:
 
-    Pawn(char color_, Position startPos);
+    Pawn(Color color_, Position startPos);
 
     void move(const Position& newPos);
     void take(const Position& takePos);

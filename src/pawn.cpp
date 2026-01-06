@@ -3,7 +3,7 @@
 using namespace std;
 
 
-Pawn::Pawn(char color_, Position startPos) :
+Pawn::Pawn(Color color_, Position startPos) :
     Piece(color_, name, startPos), enPassantFlag(0), canMove(0), canPromote(1), canTake(1) {}
 
 int Pawn::getCanMoveVal() const {

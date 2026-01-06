@@ -2,9 +2,13 @@
 #include "Position.h"
 #include <string>
 
+enum class Color {
+    White, Black
+};
+
 class Piece {
 protected:
-    char color;
+    Color color;
     Position pos;
     std::string name;
     int isPinned;
@@ -12,12 +16,12 @@ protected:
 public:
 
     //functions here
-    Piece(char color_, const std::string& name_, Position pos_);
+    Piece(Color color_, const std::string& name_, Position pos_);
 
     [[nodiscard]] virtual bool isValidMove(const Position& newPos) const;
 
     Position getPosition() const;
-    char getColor() const;
+    Color getColor() const;
     std::string getName() const;
     int getIsPinned() const;
 
