@@ -16,10 +16,10 @@ public:
     void take(const Position& takePos);
     void promote();
 
-    void setEnpassantZero();
-    void setCanTake();
-    void setCanMove();
-    void setCanPromote();
+    void setEnpassantZero(int newVal);
+    void setCanTake(int newVal);
+    void setCanMove(int newVal);
+    void setCanPromote(int newVal);
 
     int getEnpassantVal() const;
     int getCanTakeVal() const;
